@@ -1,10 +1,7 @@
-﻿using BarhiLibrarayApi.Configuration;
-using BarhiLibrarayApi.IBooksService;
+﻿using BarhiLibrarayApi.IBooksService;
 using BarhiLibrarayApi.Moldel;
-using BarhiLibrarayApi.RequestModel;
 using BarhiLibrarayApi.Service;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB.Driver;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,20 +12,15 @@ namespace BarhiLibrarayApi.Controllers
     public class BooksController : ControllerBase
     {
         IBookService _booksService ;
-      
-        public BooksController(IBookService booksService,IDbConnection dbConnection)
+        public BooksController(IBookService booksService)
         {
             _booksService = booksService;
-             
         }
         // GET: api/<BooksController>
         [HttpGet]
         public IEnumerable<Book> Get()
         {
-            var listOfBooks = new List<Book>();
-            
-            listOfBooks = _booksService.GetBooks();
-           
+            var listOfBooks = _booksService.GetBooks();
             return listOfBooks;
         }
 
@@ -42,37 +34,20 @@ namespace BarhiLibrarayApi.Controllers
 
         // POST api/<BooksController>
         [HttpPost]
-        public IActionResult Post([FromBody] BookRequest book)
+        public void Post([FromBody] string value)
         {
-            var listOfBooks = _booksService.AddBook(book);
-
-            return Ok("Book Added");
         }
-
 
         // PUT api/<BooksController>/5
         [HttpPut("{id}")]
-        public IActionResult Put(string id, [FromBody] BookRequest bookRequest)
+        public void Put(int id, [FromBody] string value)
         {
-            var updatedBook = _booksService.UpdateBook(id,bookRequest);
-            if (updatedBook != null)
-            {
-                return NoContent();
-            }
-            return NotFound();
-
         }
 
         // DELETE api/<BooksController>/5
-        [HttpDelete("{bookId}")]
-        public IActionResult Delete(string bookId)
+        [HttpDelete("{id}")]
+        public void Delete(int id)
         {
-            var bookName = _booksService.DeleteBook(bookId);
-            if(bookName == null)
-            {
-                return NotFound();
-            }
-            return Ok("Book Deleted");
         }
     }
 }

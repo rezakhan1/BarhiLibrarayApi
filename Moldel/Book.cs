@@ -1,25 +1,12 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
-namespace BarhiLibrarayApi.Moldel
+﻿namespace BarhiLibrarayApi.Moldel
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Book
     {
-        [BsonId] 
-        public ObjectId Id { get; set; }
-
-        [BsonElement("DonatedDate")]
-        public string? DonatedDate { get; set; }
-        [BsonElement("donarId")]
-        public string? DonarId { get; set; }
-        [BsonElement("title")]
+        public string id { get; set; }
         public string title { get; set; }
-        [BsonElement("author")]
         public string author { get; set; }
-        [BsonElement("author_firstname")]
         public object author_firstname { get; set; }
-        [BsonElement("author_lastname")]
         public string author_lastname { get; set; }
         public string author_middlename { get; set; }
         public string categories { get; set; }
