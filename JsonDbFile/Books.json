@@ -1,6 +1,5 @@
 [
     {
-      "id": "1159142", 
       "title": "Agile Web Development with Rails",
       "author": "Sam Ruby, Dave Thomas, David Heinemeier Hansson",
       "author_firstname": null,
@@ -30,7 +29,6 @@
       "cover": "http://libgen.org/covers/721000/ae49d9bb94118632df0691df18706319-g.jpg"
     },
     {
-      "id": "2375753",
       "title": "Flask Web Development",
       "author": "Miguel Grinberg",
       "author_firstname": null,
@@ -54,7 +52,6 @@
       "cover": null
     },
     {
-      "id": "592321",
       "title": "Agile web development with rails: a Pragmatic guide",
       "author": "Dave Thomas, David Heinemeier Hansson, Leon Breedt, Mike Clark, Thomas Fuchs, Andrea Schwarz",
       "author_firstname": null,
@@ -78,7 +75,6 @@
       "cover": "http://libgen.org/covers/164000/af5f2f07c3bf2fd005fc4189b6945feb-d.jpg"
     },
     {
-      "id": "643503",
       "title": "CakePHP Application Development: Step-by-step introduction to rapid web development using the open-source MVC CakePHP framework",
       "author": "Ahsanul Bari, Anupom Syam",
       "author_firstname": null,
@@ -102,7 +98,7 @@
       "cover": "http://libgen.org/covers/215000/0130dd963cca48d57bfe2252c2a521f7-d.jpg"
     },
     {
-      "id": "547307",
+
       "donarId": "1",
       "title": "Alex Homer, ASP.NET 2.0 Visual Web Developer 2005",
       "author": "David Sussman",
@@ -128,7 +124,6 @@
       "DonatedDate": "15/10/2022"
     },
     {
-      "id": "643519",
       "donarId": "2",
       "title": "PHP Oracle Web Development: Data processing, Security, Caching, XML, Web Services, and Ajax: A practical guide to combining the power, performance, scalability, ... time, and high performance of PHP",
       "author": "Yuli Vasiliev",
@@ -160,7 +155,6 @@
       "DonatedDate": "15/10/2022"
     },
     {
-      "id": "2166584",
       "donarId": "3",
       "title": "WordPress for Web Developers: An Introduction for Web Professionals",
       "author": "Stephanie Leary (auth.)",
@@ -192,7 +186,6 @@
       "DonatedDate": "15/10/2022"
     },
     {
-      "id": "643521",
       "donarId": "2",
       "title": "MODx Web Development",
       "author": "Antano Solar John, Antano Solar John",
@@ -224,7 +217,6 @@
       "DonatedDate": "15/10/2022"
     },
     {
-      "id": "682493",
       "donarId": "5",
       "title": "Grok 1.0 Web Development",
       "author": "Carlos de la Guardia",
@@ -256,7 +248,6 @@
       "DonatedDate": "15/10/2022"
     },
     {
-      "id": "682507",
       "title": "Professional JavaScript for Web Developers",
       "author": "Nicholas C. Zakas",
       "author_firstname": null,
@@ -286,7 +277,6 @@
       "cover": "http://libgen.org/covers/254000/b07adfcaf9641b17fe76115bf174f44c-d.jpg"
     },
     {
-      "id": "740977",
       "title": "Art of Java Web Development: Struts, Tapestry, Commons, Velocity, JUnit, Axis, Cocoon, InternetBeans, WebWork",
       "author": "Neal Ford",
       "author_firstname": null,
@@ -316,7 +306,7 @@
       "cover": "http://libgen.org/covers/314000/2d822f49188d9edaa78f2085f8e2737f-d.jpg"
     },
     {
-      "id": "826704",
+    
       "title": "Agile.Web.Development.with.Rails.4th.Edition",
       "author": "the pragmatic programmers",
       "author_firstname": null,
@@ -340,7 +330,7 @@
       "cover": null
     },
     {
-      "id": "879439",
+
       "title": "Beginning CSS Web Development: From Novice to Professional",
       "author": "Simon Collison",
       "author_firstname": null,
@@ -364,7 +354,6 @@
       "cover": "http://libgen.org/covers/454000/ee845efa4da1004f1177ae9b498eca22-d.jpg"
     },
     {
-      "id": "1159094",
       "donarId": "11",
       "title": "Beginning PHP 6, Apache, MySQL 6 Web Development",
       "author": "Timothy Boronczyk",
@@ -389,7 +378,6 @@
       "cover": "http://libgen.org/covers/721000/2d53e184f32b5cad6fe01e581dcdae2c-g.jpg"
     },
     {
-      "id": "2054864",
       "donarId": "10",
       "title": "Web development solutions : Ajax, APIs, libraries, and hosted services made easy",
       "author": "Christian Heilmann; Mark Norman Francis",
@@ -420,7 +408,6 @@
       "cover": "http://libgen.org/covers/900000/b544a6be89e10bc5dfe00e48d9fdd429-d.jpg"
     },
     {
-      "id": "2379269",
       "donarId": "7",
       "title": "Instant Web Scraping with Java",
       "author": "Ryan Mitchell",
