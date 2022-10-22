@@ -1,3 +1,4 @@
+using BarhiLibrarayApi.Configuration;
 using BarhiLibrarayApi.IBooksService;
 using BarhiLibrarayApi.Service;
 
@@ -10,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IBookService, BooksService>();
+builder.Services.AddScoped<IDbConnection, DbConnection>();
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(
@@ -27,7 +29,6 @@ builder.Services.AddCors(options =>
 
 
 var app = builder.Build();
-
 
 
 // Configure the HTTP request pipeline.
