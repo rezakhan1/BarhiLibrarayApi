@@ -70,9 +70,9 @@ namespace BarhiLibrarayApi.Controllers
             var bookName = _booksService.DeleteBook(bookId);
             if(bookName == null)
             {
-                return NotFound();
+                return BadRequest("Failed to delete the book");
             }
-            return Ok("Book Deleted");
+            return Ok();
         }
     }
 }
