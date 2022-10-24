@@ -44,9 +44,13 @@ namespace BarhiLibrarayApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] BookRequest book)
         {
-            var listOfBooks = _booksService.AddBook(book);
+            var addedBook = _booksService.AddBook(book);
+            if (addedBook ==null)
+            {
+                return BadRequest("Incorrect Format");
+            }
 
-            return Ok("Book Added");
+            return Ok(addedBook);
         }
 
 
